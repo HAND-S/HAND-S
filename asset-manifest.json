@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/HAND-S/static/js/main.4c1a1733.js",
+    "static/media/logo.png": "/HAND-S/static/media/logo.d87209a11b1bdf4c2b39.png",
+    "index.html": "/HAND-S/index.html",
+    "main.4c1a1733.js.map": "/HAND-S/static/js/main.4c1a1733.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.4c1a1733.js"
+  ]
+}
