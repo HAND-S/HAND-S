@@ -1,5 +1,6 @@
 import {
 	Box,
+	Button,
 	Heading,
 	Highlight,
 	HStack,
@@ -8,6 +9,7 @@ import {
 	VStack
 } from '@chakra-ui/react';
 import Person from '../Images/person.png';
+import { Link as RouterLink } from 'react-router-dom';
 
 export function Home() {
 	return (
@@ -42,15 +44,25 @@ export function Home() {
 					
 				</Box>
 
-				<HStack paddingTop={'50px'}>
+				<HStack paddingTop={'50px'} paddingBottom={'70px'}>
 					<Image src={Person} boxSize={'400px'} align={'left'} />
 					<Box bg={'white'} px={50} paddingY={80} borderRadius={100}>
 						<Text textAlign={'center'} maxW={'680px'} fontSize={'25px'}>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis velit ac dui feugiat,
-							a ornare lacus egestas. Integer molestie mauris enim, ultricies condimentum erat blandit vel. Aenean congue magna in augue tristique rutrum.
+							Schizophrenia and Bipolar disorder are both debilitating mental illnesses that significantly affect millions of people worldwide.
+							Among other symptoms, research has shown that both of these illnesses have an impact on motor skills and skew handwriting.
+							HAND-S is a model that can distinguish mentally ill handwriting from healthy handwriting for free.
+							This website is NOT a psychiatric diagnosis, but is an accurate screening test for mental illness. Click the button below to get tested.
 						</Text>
 					</Box>
 				</HStack>
+
+				<RouterLink to={'/model'}>
+					<Box bg={'#407bfe'} px={250} paddingY={35} borderRadius={100} fontSize={'35px'} color={'white'}>
+						<Button>
+							Get Tested
+						</Button>
+					</Box>
+				</RouterLink>
 
 			</VStack>
 		</>
