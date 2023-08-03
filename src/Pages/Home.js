@@ -2,16 +2,19 @@ import {
 	Box,
 	Heading,
 	Highlight,
-	Stack,
+	HStack,
+	Image,
 	Text,
 	VStack
 } from '@chakra-ui/react';
+import Person from '../Images/person.png';
 
 export function Home() {
 	return (
 		<>
 			<VStack paddingY={80}>
-				<Box bg={'white'} px={200} paddingY={40} borderRadius={100}>
+
+				<Box bg={'white'} px={250} paddingY={40} borderRadius={100}>
 
 					<Heading align={'center'} fontWeight={'bold'} fontSize={80} color={'#1A54D7'}>HAND-S</Heading>
 					<Text align={'center'} paddingTop={15} fontSize={20}>
@@ -38,6 +41,17 @@ export function Home() {
 					</Text>
 					
 				</Box>
+
+				<HStack paddingTop={'50px'}>
+					<Image src={Person} boxSize={'400px'} align={'left'} />
+					<Box bg={'white'} px={50} paddingY={80} borderRadius={100}>
+						<Text textAlign={'center'} maxW={'680px'} fontSize={'25px'}>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis velit ac dui feugiat,
+							a ornare lacus egestas. Integer molestie mauris enim, ultricies condimentum erat blandit vel. Aenean congue magna in augue tristique rutrum.
+						</Text>
+					</Box>
+				</HStack>
+
 			</VStack>
 		</>
 	);

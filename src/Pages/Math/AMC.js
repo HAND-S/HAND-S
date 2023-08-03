@@ -1,4 +1,4 @@
-import { Container, Heading, Highlight, Stack, Text, VStack } from '@chakra-ui/react';
+import { Container, Heading, Highlight, Stack, VStack } from '@chakra-ui/react';
 import { NavBar } from '../../Components/NavBar';
 import { Slide } from '../../Components/Slide';
 
