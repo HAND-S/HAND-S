@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { HashRouter } from 'react-router-dom';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import { Fonts } from './Fonts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -11,6 +12,7 @@ const theme = {
 		global: {
 			'html, body': {
 				bg: '#B3CAFF',
+				fontFamily: 'Poppins',
 			}
 		}
 	}
@@ -19,6 +21,7 @@ const theme = {
 root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
+		<Fonts />
 			<HashRouter basename={"/"}>
 				<App />
 			</HashRouter>

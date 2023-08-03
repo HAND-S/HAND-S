@@ -1,33 +1,44 @@
 import {
-	AspectRatio,
 	Box,
-	Button,
-	Container,
-	Flex,
 	Heading,
 	Highlight,
-	HStack,
-	Image,
-	Grid,
-	Link,
 	Stack,
 	Text,
 	VStack
 } from '@chakra-ui/react';
-import { EmailIcon, InfoIcon } from '@chakra-ui/icons';
-import { NavBar } from '../Components/NavBar';
-import Logo from '../Images/logo.png';
-import { Link as RouterLink } from 'react-router-dom';
 
 export function Home() {
-	// <VStack>
+	return (
+		<>
+			<VStack paddingY={80}>
+				<Box bg={'white'} px={200} paddingY={40} borderRadius={100}>
 
-		{/* <Box bg={'green'} w='100%' p={4} color={'white'}>
-			// <Text>HAND-S</Text>
-			HAND-S
-		</Box> */}
-
-		<Text>testing</Text>
-
-	// </VStack>
+					<Heading align={'center'} fontWeight={'bold'} fontSize={80} color={'#1A54D7'}>HAND-S</Heading>
+					<Text align={'center'} paddingTop={15} fontSize={20}>
+						<Highlight query={'H'} styles={{ color: '#1A54D7', fontWeight: 'bold' }}>
+							H
+						</Highlight>
+						andwriting ‎ 
+						<Highlight query={'A'} styles={{ color: '#1A54D7', fontWeight: 'bold' }}>
+							A
+						</Highlight>
+						nalysis for ‎ 
+						<Highlight query={'N'} styles={{ color: '#1A54D7', fontWeight: 'bold' }}>
+							N
+						</Highlight>
+						europsychiatric ‎ 
+						<Highlight query={'D'} styles={{ color: '#1A54D7', fontWeight: 'bold' }}>
+							D
+						</Highlight>
+						isorders – ‎ 
+						<Highlight query={'S'} styles={{ color: '#1A54D7', fontWeight: 'bold' }}>
+							S
+						</Highlight>
+						chizophrenia ‎ 
+					</Text>
+					
+				</Box>
+			</VStack>
+		</>
+	);
 }
