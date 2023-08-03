@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/HAND-S/static/js/main.55003357.js",
+    "main.js": "/HAND-S/static/js/main.c4c78767.js",
     "static/media/person.png": "/HAND-S/static/media/person.cd0db9fb14ef56271cc1.png",
     "index.html": "/HAND-S/index.html",
-    "main.55003357.js.map": "/HAND-S/static/js/main.55003357.js.map"
+    "main.c4c78767.js.map": "/HAND-S/static/js/main.c4c78767.js.map"
   },
   "entrypoints": [
-    "static/js/main.55003357.js"
+    "static/js/main.c4c78767.js"
   ]
 }
