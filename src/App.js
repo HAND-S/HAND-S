@@ -12,7 +12,7 @@ import { Projects } from './Pages/Projects';
 function App() {
   return (
       <Routes>
-        <Route path="/hand-s" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/srel" element={<SRel />} />
         <Route path="/numtheory" element={<NumberTheory />} />
         <Route path="/amc" element={<AMC />} />
